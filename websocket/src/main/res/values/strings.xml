@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WebSocket</string>
+    <string name="title_activity_web_socket">webSocketActivity</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="white">#ffffff</color>
+    <color name="transparents">#00000000</color>
+    <color name="btn_blue">#0077ff</color>
+    <color name="btn_shape_blue">#2C9BD3</color>
+    <color name="line_hui">#D9D9D9</color>
+    <color name="text_hui">#C1D1D1</color>
+    <color name="text_hui_c4">#C1D1D1</color>
+    <color name="main_color">#1C2C5B</color>
+    <color name="text_hui_color">#999999</color>
+    <color name="red">#ffff4444</color>
+    <color name="start_color">#69cfe5</color>
+
+    <color name="text_hui_6">#666666</color>
+    <color name="main_line_1">#cdcdcd</color>
+
+    <!-- For date picker widget -->
+
+    <!-- For settings framework -->
+
+    <!-- For security permissions -->
+
+    <!-- For search-related UIs -->
+
+    <!--bar-->
+    <color name="description">#686868</color>
+    <color name="linefill">#DEEFE4</color>
+
+
+
+    <!-- keyguard tab -->
+
+    <!-- keyguard clock -->
+
+    <!-- keyguard overscroll widget pager -->
+
+    <!-- LockPatternView -->
+
+    <!-- FaceLock -->
+
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+
+    <!-- Keyguard colors -->
+
+    <!-- deep orange 600 -->
+
+    <!-- Default user icon colors -->
+    <!-- teal 500 -->
+    <!-- indigo 500 -->
+    <!-- blue 500 -->
+    <!-- pink 500 -->
+    <!-- green 500 -->
+    <!-- light green 500 -->
+    <!-- orange 500 -->
+    <!-- deep orange 500 -->
+    <!-- gray 500 -->
+    <!-- white -->
+    <color name="color_text_grey">#666666</color>
+    <color name="colorPrimaryMe_yellow">#f4ec0c</color>
+    <color name="color_text_grey_yellow">#e1e1e1</color>
+    <color name="color_yinhui">#f0f0f0</color>
+
+    <color name="f850_default_blue">#0079ff</color>
+    <color name="header_toast">#024ca1</color>
+    <color name="blue">#4c90f9</color>
+
+    <color name="color_red">#FF5722</color>
+    <color name="color_yellow">#FFC107</color>
+    <color name="color_green">#3FB830</color>
+    <color name="color_blue">#00BAED</color>
+    <color name="color_dark">#263238</color>
+    <color name="color_dark_light">#455A64</color>
+    <color name="color_light">#ECEFF1</color>
+    <color name="sparking_warn">#c1bb11</color>
+    <color name="sparking_warning">#ff0000</color>
+    <color name="color_dashboard_yellow">#ecac00</color>
+
+</resources>

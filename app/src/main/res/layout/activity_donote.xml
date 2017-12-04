@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:Star="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/img_fuel_helper_background">
+        <LinearLayout
+            style="@style/donote_linear_width_match_style">
+            <LinearLayout
+                android:id="@+id/ll_oil_band"
+                android:background="#C6F15D"
+                style="@style/donote_linear_with_weight_style">
+                <ImageView
+                    android:src="@mipmap/img_fuel_band"
+                    style="@style/donote_img_with_wrap_height_wrap_style"/>
+                <LinearLayout
+                    style="@style/donote_linear_inner_width_match">
+                    <TextView
+                        android:text="汽油牌号："
+                        style="@style/donote_tv_width_wrap_height_wrap"/>
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/donote_linear_with_weight_style"
+                android:background="#EFA771">
+                <ImageView
+                    style="@style/donote_img_with_wrap_height_wrap_style"
+                    android:src="@mipmap/img_fuel_money"/>
+                <LinearLayout
+                    style="@style/donote_linear_inner_width_match">
+                    <TextView
+                        style="@style/donote_tv_width_wrap_height_wrap"
+                        android:text="油费(元)："/>
+                    <EditText
+                        android:id="@+id/et_oil_total_money"
+                        style="@style/donote_et_width_value_style"
+                        android:hint="请输入油费"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/donote_linear_width_match_style">
+            <LinearLayout
+                android:background="#48C3E3"
+                style="@style/donote_linear_with_weight_style">
+                <ImageView
+                    android:src="@mipmap/img_fuel_prices"
+                    style="@style/donote_img_with_wrap_height_wrap_style"/>
+                <LinearLayout
+                    style="@style/donote_linear_inner_width_match">
+                    <TextView
+                        android:text="油价(元/L)："
+                        style="@style/donote_tv_width_wrap_height_wrap"/>
+                    <EditText
+                        android:id="@+id/et_oil_price"
+                        android:hint="请输入油价"
+                        style="@style/donote_et_width_value_style"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/donote_linear_with_weight_style"
+                android:background="#95C6F1">
+                <ImageView
+                    style="@style/donote_img_with_wrap_height_wrap_style"
+                    android:src="@mipmap/img_fuel_volume"/>
+                <LinearLayout
+                    style="@style/donote_linear_inner_width_match">
+                    <TextView
+                        style="@style/donote_tv_width_wrap_height_wrap"
+                        android:text="油量(L)："/>
+                    <EditText
+                        android:id="@+id/et_fule_charge"
+                        style="@style/donote_et_width_value_style"
+                        android:hint="请输入油量"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/donote_linear_width_match_style">
+            <LinearLayout
+                android:background="#E4B517"
+                style="@style/donote_linear_with_weight_style">
+                <ImageView
+                    android:src="@mipmap/img_fuel_address"
+                    style="@style/donote_img_with_wrap_height_wrap_style"/>
+                <LinearLayout
+                    style="@style/donote_linear_inner_width_match">
+                    <TextView
+                        android:text="加油站："
+                        style="@style/donote_tv_width_wrap_height_wrap"/>
+                    <EditText
+                        android:id="@+id/et_oil_station"
+                        style="@style/donote_et_width_value_style"
+                        android:inputType="text"
+                        android:text="张江加油站"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/donote_linear_with_weight_style"
+                android:background="#BBCC2C">
+                <ImageView
+                    style="@style/donote_img_with_wrap_height_wrap_style"
+                    android:src="@mipmap/img_fuel_date"/>
+                <LinearLayout
+                    style="@style/donote_linear_inner_width_match">
+                    <TextView
+                        style="@style/donote_tv_width_wrap_height_wrap"
+                        android:text="加油日期："/>
+                    <TextView
+                        android:id="@+id/tv_data_select"
+                        style="@style/donote_et_width_value_style"
+                        android:text="2017-08-01"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/white"
+            android:text="加油评价"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <uaes.bda.antianchor.demo.customsizeview.Star
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_hp"
+                Star:starsNum ="5"
+                Star:starWidth ="25dp"
+                Star:starHeight ="25dp"
+                Star:starDistance ="3dp"
+                Star:starBackground ="@mipmap/star_no"
+                Star:starDrawBackground ="@mipmap/star"
+                Star:starClickable ="false"
+                android:layout_marginLeft="10dp">
+            </uaes.bda.antianchor.demo.customsizeview.Star>
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:text="不满意，比较差"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/put_in"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape22"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_left"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>

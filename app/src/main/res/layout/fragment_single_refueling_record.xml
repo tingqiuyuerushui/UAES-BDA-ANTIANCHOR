@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/come_on_time" />
+                <TextView
+                    android:id="@+id/tv_oil_date"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //加油时间
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/jydd" />
+                <TextView
+                    android:id="@+id/tv_oil_location"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //加油地点
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/sjjyl"/>
+                <TextView
+                    android:id="@+id/tv_actual_oil"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //实际加油量
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/yjyl" />
+                <TextView
+                    android:id="@+id/tv_shout_oil"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //应加油量
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/jyfy" />
+                <TextView
+                    android:id="@+id/tv_oil_money"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //加油费用
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/sjfl" />
+                <TextView
+                    android:id="@+id/tv_actual_oil_money"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //实际费率
+        </LinearLayout>
+        //第一列
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_hui" />//中间线
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/yon_you_liang" />
+                <TextView
+                    android:id="@+id/tv_oil_consumption"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //用油量
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/xslc"/>
+                <TextView
+                    android:id="@+id/tv_driven_distance"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //行驶里程
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/pjxh" />
+                <TextView
+                    android:id="@+id/tv_average_fuel_consumption"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //平均消耗
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/pjsd" />
+                <TextView
+                    android:id="@+id/tv_average_speed"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //平均速度
+            <LinearLayout style="@style/style_linearlayout_regular">
+
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/jjxpm"/>
+                <TextView
+                    android:id="@+id/tv_economic_ranking"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //经济性排名
+            <LinearLayout style="@style/style_linearlayout_regular">
+                <TextView
+                    style="@style/style_textview_regular"
+                    android:text="@string/qypz"/>
+                <TextView
+                    android:id="@+id/tv_gasoline_quality"
+                    style="@style/style_textview_change"/>
+            </LinearLayout>
+            //汽油品质
+        </LinearLayout>
+        //第二列
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_fuel_total_times"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_18"
+            android:drawableTop="@mipmap/img_fuel_total_times"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="加油总次数：0次"/>
+        <TextView
+            android:id="@+id/tv_fuel_total_volume"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:drawableTop="@mipmap/img_fuel_total_volume"
+            android:textSize="@dimen/text_18"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="加油总量：80L"/>
+
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/mBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_low_oil_warning_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:padding="15dip"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="@dimen/text_16"
+            android:text="低油量预警设置" />
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:src="@mipmap/black_right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_feature_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:padding="15dip"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="@dimen/text_16"
+            android:text="功能列表" />
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:src="@mipmap/black_right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:padding="15dip"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="@dimen/text_16"
+            android:text="更多设置敬请期待" />
+    </LinearLayout>
+
+</LinearLayout>

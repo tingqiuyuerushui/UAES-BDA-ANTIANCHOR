@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/img_weather_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:textSize="@dimen/text_24"
+                android:text="浦东新区"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                style="@style/tv_weather_head_style"/>
+
+            <TextView
+                android:id="@+id/tv_weather"
+                style="@style/tv_weather_head_style"
+                android:layout_below="@+id/tv_location"
+                android:textSize="@dimen/text_18"
+                android:text="阵雨"/>
+
+            <TextView
+                android:id="@+id/tv_temp"
+                style="@style/tv_weather_head_style"
+                android:layout_below="@+id/tv_weather"
+                android:textSize="@dimen/text_20"
+                android:text="30°"/>
+        </RelativeLayout>
+        <View style="@style/line_weather_horizontal_style"
+              android:layout_marginTop="10dp"/>
+        <uaes.bda.antianchor.demo.customsizeview.MyListView
+            android:id="@+id/list_weather_day"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null" />
+        <View style="@style/line_weather_horizontal_style"/>
+        <LinearLayout
+            style="@style/linear_weather_height_style">
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="能见度"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_visibility"
+                    android:text="4.8公里"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="体感温度"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_feel_temp"
+                    android:text="32°"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="气压"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_pa"
+                    android:text="1023百帕"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+
+        </LinearLayout>
+        <View style="@style/line_weather_horizontal_style"/>
+        <LinearLayout
+            style="@style/linear_weather_height_style">
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="降雨概率"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_rainfall_probability"
+                    android:text="80%"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="湿度"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    android:text="87%"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="空气质量指数"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_air_quality"
+                    android:text="35"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+
+        </LinearLayout>
+        <View style="@style/line_weather_horizontal_style"/>
+        <LinearLayout
+            style="@style/linear_weather_height_style">
+            <LinearLayout
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="风速等级"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:id="@+id/tv_wind_speed"
+                    android:text="东南风6米/秒"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+            <LinearLayout
+                android:visibility="invisible"
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="湿度"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:visibility="invisible"
+                    android:text="87%"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+            <LinearLayout
+                android:visibility="invisible"
+                style="@style/linear_weather_graid_style">
+                <TextView
+                    android:text="空气质量指数"
+                    style="@style/tv_weather_graid_top_style"/>
+                <TextView
+                    android:text="35"
+                    style="@style/tv_weather_graid_bottom_style"/>
+            </LinearLayout>
+            <View style="@style/line_weather_vertical_style" />
+
+        </LinearLayout>
+        <View style="@style/line_weather_horizontal_style"/>
+    </LinearLayout>
+
+</LinearLayout>

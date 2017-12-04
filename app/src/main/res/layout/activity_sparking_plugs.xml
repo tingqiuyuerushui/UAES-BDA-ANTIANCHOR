@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/demo_backgroud"
+    android:orientation="vertical"
+
+    android:textColor="@color/white">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_padding10"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/one_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="一缸火花塞"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/one_img"
+                android:layout_width="wrap_content"
+
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@mipmap/sparking_normal"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/one_healthy"
+                android:background="@mipmap/sparker_lift"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/two_name"
+                android:layout_width="wrap_content"
+
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="二缸火花塞"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/two_img"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@mipmap/sparking_normal" />
+
+            <TextView
+                android:id="@+id/two_healthy"
+                android:background="@mipmap/sparker_lift"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_padding10"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/three_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                android:text="三缸火花塞"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/three_img"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@mipmap/sparking_normal" />
+
+            <TextView
+                android:id="@+id/three_healthy"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@mipmap/sparker_lift"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/four_name"
+                android:layout_width="wrap_content"
+
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="四缸火花塞"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/four_img"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@mipmap/sparking_normal"
+
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/four_healthy"
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@mipmap/sparker_lift"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/bt_check"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sparking_"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin_padding10"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="影响点"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="1.发动机明显抖动，耗油，加速无力。"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2.行驶过程之中出现颠簸，顿挫感。"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+
+                android:text="3.行驶过程中出现冒烟，打炮。"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+
+                android:text="4.打火时间长，甚至DAU打不着火，怠速不稳。"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:id="@+id/img_chack"
+    android:background="@mipmap/image"
+    android:visibility="visible"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4">
+
+    <TextView
+        android:id="@+id/tv_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:text="             采用我们的建议,"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="@color/btn_blue"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/tv_images"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:text="                     能延长火花塞寿命哟"
+        android:gravity="center_horizontal"
+        android:textColor="@color/btn_blue"
+        android:visibility="visible" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/sparking_button"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_vertical_margin_padding10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_sparking"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sp_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                android:text="更换"
+                android:textColor="@color/white"
+                android:drawableRight="@mipmap/ico_go_arrow_right"
+                android:paddingRight="10dp"
+
+                android:textSize="22sp" />
+
+      <!--      <ImageView
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/ico_go_arrow_right" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+<!--            android:text="采用我的建议,能延长火花塞寿命哟"
+-->

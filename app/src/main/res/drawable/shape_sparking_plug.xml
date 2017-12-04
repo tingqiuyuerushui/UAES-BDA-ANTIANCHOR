@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 渐变 -->
+                <gradient android:angle="-90" android:centerColor="#1c6d8b" android:startColor="#0025ab" android:type="linear"/>
+            <!-- 描边 -->
+                <stroke android:width="0.5dp" android:color="@color/btn_blue"/>
+            <!-- 圆角 -->
+                <corners android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp"
+                    android:topLeftRadius="20dp" android:topRightRadius="20dp"/>
+        </shape>
+    </item>
+    <item >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 渐变 -->
+            <gradient android:angle="-90" android:centerColor="#0025ab"  android:startColor="#1c6d8b" android:type="linear"/>
+            <!-- 描边 -->
+            <stroke android:width="0.5dp" android:color="@color/btn_blue"/>
+            <!-- 圆角 -->
+            <corners android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp"
+                android:topLeftRadius="20dp" android:topRightRadius="20dp"/>
+        </shape>
+    </item>
+</selector>

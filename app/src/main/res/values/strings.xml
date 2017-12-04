@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">U行·天下</string>
+    <string name="text_login">登录</string>
+
+
+    <!-- 更新 -->
+
+
+    <string name="come_on_time">加油时间:</string>
+    <string name="yon_you_liang">用油量:</string>
+    <string name="jydd">加油地点:</string>
+    <string name="xslc">行驶里程:</string>
+    <string name="sjjyl">实际加油量:</string>
+    <string name="pjxh">平均油耗:</string>
+    <string name="yjyl">应加油量:</string>
+    <string name="pjsd">平均速度:</string>
+    <string name="jyfy">加油费用:</string>
+    <string name="jjxpm">经济性排名:</string>
+    <string name="sjfl">实际油价:</string>
+    <string name="qypz">汽油品质:</string>
+    <string name="put_in">提交</string>
+
+    <string name="data">日期</string>
+    <string name="gas_station">加油站</string>
+    <string name="fule_charge">加油量(升)</string>
+    <string name="fuel_consumption">加油消费(元)</string>
+    <string name="octane_rating">汽油标号</string>
+    <string name="oil_price">油价(元/升)</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title"/>
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/line_hui" />
+
+    <uaes.bda.antianchor.demo.customsizeview.NestRadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+    <LinearLayout
+        android:id="@+id/ll_radio_home"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ico_radio_home"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/index_footer_ico01" />
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparents"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:tag="radio_button0"
+            android:text="主页"
+            android:textColor="@color/home_text_selector_radio_back"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_radio_fault"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ico_radio_fault"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/index_footer_ico02" />
+
+        <RadioButton
+            android:id="@+id/radio_fault"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparents"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:tag="radio_button0"
+            android:text="故障预测"
+            android:textColor="@color/home_text_selector_radio_back"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_radio_help"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ico_radio_help"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/index_footer_ico03" />
+
+        <RadioButton
+            android:id="@+id/radio_help"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparents"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:tag="radio_button0"
+            android:text="用车助手"
+            android:textColor="@color/home_text_selector_radio_back"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_radio_user"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ico_radio_user"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/index_footer_ico04" />
+
+        <RadioButton
+            android:id="@+id/radio_user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparents"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:tag="radio_button0"
+            android:text="保养助手"
+            android:textColor="@color/home_text_selector_radio_back"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_radio_setting"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ico_radio_setting"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/index_footer_ico05" />
+
+        <RadioButton
+            android:id="@+id/radio_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparents"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:tag="radio_button0"
+            android:text="设置"
+            android:textColor="@color/home_text_selector_radio_back"
+            android:textSize="@dimen/text_12" />
+    </LinearLayout>
+    </uaes.bda.antianchor.demo.customsizeview.NestRadioGroup>
+</LinearLayout>

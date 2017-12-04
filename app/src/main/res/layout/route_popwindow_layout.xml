@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:text="" />
+
+<!--    <Button
+        android:id="@+id/bt_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+
+        android:text="界面一" />-->
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/bt_item2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/route_bt_selector"
+        android:text="加油已完成，点击去记账" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+<!--    <Button
+        android:id="@+id/bt_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="取消" />-->
+</LinearLayout>
+
